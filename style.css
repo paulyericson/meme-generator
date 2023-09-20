@@ -1,0 +1,86 @@
+/* form styling  */
+ 
+ .grey-box {
+    position: relative;
+    top: -8px;
+    padding:40px;
+    background-color: rgb(240, 241, 242);
+ }
+ 
+ .h1-container {
+    position: relative; /* Fixed position to keep it in place */
+    top: 50%; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%); /* Center the container */
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+  
+
+  h1 {
+    font-size: 50px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Adjust the margin to control spacing */
+  }
+  
+  .h1p {
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-top: 0; /* Remove default top margin to bring it closer to the <h1> */
+  }
+  
+
+
+form {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+input {
+    position: absolute;
+    right: 100px;
+    border: 0px;
+    width: 1000px;
+    height: 25px;
+  }
+
+.submit-button {
+	position: absolute;
+    right: 100px;
+    bottom: 15px;
+}
+
+
+
+/* meme styling */
+
+
+.meme-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.meme-image {
+width: 400px;
+
+}
+
+
+.top-text,
+.bottom-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.top-text {
+    top: 10px;
+}
+
+.bottom-text {
+    bottom: 10px;
+}
+
+
