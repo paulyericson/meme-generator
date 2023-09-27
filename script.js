@@ -8,6 +8,12 @@ function generateMeme(imageURL, textTop, textBottom) {
     const memeContainer = document.createElement('div');
     memeContainer.classList.add('meme-container');
 
+    // Create a delete button for the meme
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('delete-button');
+    memeContainer.appendChild(deleteButton);
+
     // Create an image element for the meme
     const memeImage = document.createElement('img');
     memeImage.src = imageURL;
@@ -32,6 +38,12 @@ function generateMeme(imageURL, textTop, textBottom) {
 
     // Append the meme container to the results section
     resultsSection.appendChild(memeContainer);
+
+    // Attach an event listener to the delete button
+    deleteButton.addEventListener('click', function () {
+        // Remove the meme container from the results section
+        resultsSection.removeChild(memeContainer);
+    });
 }
 
 // Event listener for form submission
@@ -48,9 +60,6 @@ memeForm.addEventListener('submit', function (e) {
 
 });
 
-
-
-// Delete a meme
 
 
 
